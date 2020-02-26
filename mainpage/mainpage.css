@@ -10,96 +10,119 @@
 }
 
 body {
+    /*Layout*/
     width: 100%; height: 100%;
-    font-family: "NotoSans";
+    /*Scroll options*/
     overflow-x: scroll;
     overflow-y: scroll;
     position: fixed;
-    /*Scrollbar options*/
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    /*Text&Color*/
+    font-family: "NotoSans";
 }
 body::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
 }
 
 wrap {
-    /*flex options*/
+    /*Layout*/
+    height: 100%;
+    /*Flex Container options*/
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 /*header*/
 header {
+    /*Layout*/
+    width : 100%; height : 130px;
+    padding: 5px 10px;
+    /*Flex Container options*/
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    padding: 5px 10px;
-    width : 100%; height : 130px;
+    /*Flex Item options*/
     align-self: flex-start;
     flex: 0 0;
+    /*Text&Color*/
     background-color: #F8F5F5;
 }
 .titleArea {
+    /*Flex Item options*/
     flex: 1 1 auto;
 }
 .title {
+    /*Text&Color*/
     color: #F56975;
     font-size: 55px;
 }
 .subtitle {
+    /*Text&Color*/
     color: #F6BBC6;
     font-size: 25px;
 }
 .menubutton {
-    flex: 0 1 auto;
+    /*Flex Item options*/
+    flex: 0 0 auto;
 }
 img {
+    /*Layout*/
+    height: 100%;
     padding: 10px;
-    max-height: 100%;
-    max-width: 100%;
 }
 
 /*main body*/
 .body {
-    flex: 1 1 auto;
-    width: 100vw;
+    /*Layout*/
+    width: 100%;
+    /*Flex Container options*/
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    /*Flex Item options*/
+    flex: 1 1 auto;
+    /*Text&Color*/
     background-color: white;
-    
-    margin-right: 100px;
 }
 
 .menu{
-    display: inline-block;
-    white-space: nowrap;
+    /*Layout*/
     padding: 10px 10px;
-    border: 3px solid #F6BBC6;
+    /*Scroll options*/
+    display: inline-block;
     overflow: auto;
+    /*Text&Color*/
+    white-space: nowrap;
+    border: 3px solid #F6BBC6;
 }
 .menuimg {
+    /*Layout*/
     width: fit-content;
     height: auto;
 }
 .main{
-    flex-grow: 1;
-    border: 3px solid #F6BBC6;
+    /*Scroll options*/
     overflow: auto;
+    /*Flex Item options*/
+    flex-grow: 1;
+    /*Text&Color*/
+    border: 3px solid #F6BBC6;
 }
 
 
 /*footer*/
 footer {
-    padding: 10px 25px;
+    /*Layout*/
     width : 100%; height : auto;
+    padding: 10px 25px;
+    /*Flex Item options*/
     align-self: flex-end;
     flex: 0 0 auto;
+    /*Text&Color*/
     background-color: #F8F0EE;
 }
 .contacttext {
+    /*Text&Color*/
     font-size: 18px;
     text-align: right;
     color: #F56975;
