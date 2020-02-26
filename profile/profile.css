@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "NotoSans";
-    src: url("NotoSans-Light.ttf") format("truetype");
+    src: url("../resources/NotoSans-Light.ttf") format("truetype");
 }
 
 body {
