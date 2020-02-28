@@ -95,10 +95,19 @@ img {
     white-space: nowrap;
     border: 3px solid #F6BBC6;
 }
-.menuimg {
+table {
+    /*Text&Color*/
+    font-family: "NotoSans";
+    color: #202E71;
+}
+tr, td {
     /*Layout*/
-    width: fit-content;
-    height: auto;
+    padding: 5px;
+    /*Text&Color*/
+    vertical-align: top;
+}
+.bullet {
+    color: #F6BBC6;
 }
 .main{
     /*Scroll options*/
@@ -120,6 +129,7 @@ footer {
     flex: 0 0 auto;
     /*Text&Color*/
     background-color: #F8F0EE;
+    font-family: "NotoSans";
 }
 .contacttext {
     /*Text&Color*/
