@@ -11,7 +11,7 @@
 
 body {
     font-family: "NotoSans";
-    color: #202E71;
+    color: #000000;
 }
 
 wrap {
@@ -32,5 +32,7 @@ div {
 }
 
 .bullet {
-    color: #F6BBC6;
+    padding: 1px;
+    text-align: right;
+    color: #D4D4CE;
 }
